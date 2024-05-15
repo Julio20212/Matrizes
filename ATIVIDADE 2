@@ -1,0 +1,22 @@
+package lpa;
+
+import java.util.Scanner;
+
+public class AtivMatriz2 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		int m[][]= new int[4][4];
+
+        for (int i = 0; i < 4; i++) {
+            m[i][i] = i + 1;
+        }
+        System.out.println("Matriz com valores na diagonal principal:");
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                System.out.print(m[i][j] + "\t");
+            }
+            System.out.println();
+        }
+    }
+}
