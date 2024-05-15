@@ -8,7 +8,7 @@ public class AtivMatriz2 {
 		Scanner ler = new Scanner(System.in);
         int m[][] = new int[4][4];
         int numero;
-        
+
         for (int i = 0; i < 4; i++) {
             numero = (int) Math.round(Math.random() * 10) + 1;
             m[i][i] = numero;
@@ -17,10 +17,11 @@ public class AtivMatriz2 {
         System.out.println("Matriz com valores na diagonal principal:");
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
-                if (i == j)
+                if (i == j) {
                     System.out.print(m[i][j] + "\t");
+                }
                 else
-                    System.out.print("0\t"); 
+                System.out.print("0\t");
             }
             System.out.println();
         }
